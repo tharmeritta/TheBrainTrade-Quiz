@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { createRoot } from 'react-dom/client';
+// Destructure globals from the UMD scripts loaded in index.html
+const { useState, useEffect, useCallback } = React;
+const { createRoot } = ReactDOM;
 
 // ==========================================
 // CONSTANTS & DATA
@@ -604,7 +605,9 @@ const NameEntryScreen = ({ language, onNameSubmit, onBack }) => {
     const ui = UI_STRINGS[language];
 
     const handleSubmit = (e) => {
-        e?.preventDefault();
+        if (e && e.preventDefault) {
+            e.preventDefault();
+        }
         if (name.trim()) {
             onNameSubmit(name.trim());
         }

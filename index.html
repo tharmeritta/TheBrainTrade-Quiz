@@ -16,26 +16,28 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Import Map for React -->
-    <script type="importmap">
+    <!-- React & ReactDOM (UMD - Global Variables) -->
+    <!-- crossorigin attribute fixes "Script error." by allowing error details to pass through -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel for Browser-based JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react": "https://esm.sh/react@^19.2.3",
     "react/": "https://esm.sh/react@^19.2.3/",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
 </script>
-
-    <!-- Babel for Browser-based JSX transformation -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
 
     <!-- Main Application Script -->
-    <!-- type="text/babel" tells Babel to compile this. data-type="module" allows using imports. -->
-    <script type="text/babel" data-type="module" src="js/app.js"></script>
+    <!-- Removed data-type="module" to use global React variables -->
+    <script type="text/babel" src="js/app.js"></script>
 </body>
 </html>
