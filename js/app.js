@@ -231,7 +231,7 @@ const SALES_DATA = [
         type: 'mcq',
         options: {
             en: ["Sure, start small first.", "$100 is low risk.", "$100 is the minimum, but the level of support and education differs significantly from the $500 tier.", "Most people start at $100."],
-            vi: ["Được chứ, hãy bắt đầu nhỏ trước.", "100 USD có rủi ro thấp.", "100 USD là mức tối thiểu, nhưng mức độ hỗ trợ và đào tạo sẽ khác biệt đáng kể so với mức 500 USD.", "Đa số mọi người bắt đầu ở mức 100 USD."],
+            vi: ["Được chứ, hãy bắt đầu nhỏ trước.", "100 USD có rủi ro thấp.", "100 USD là mức tối thiểu, nhưng mức độ hỗ trợและ đào tạo sẽ khác biệt đáng kể so với mức 500 USD.", "Đa số mọi người bắt đầu ở mức 100 USD."],
             th: ["ได้ครับ เริ่มเล็กๆ ก่อน", "100 USD ความเสี่ยงต่ำครับ", "100 USD คือขั้นต่ำครับ แต่ระดับการดูแลและความรู้ที่จะได้รับจะต่างจากระดับ 500 USD มากครับ", "คนส่วนใหญ่ก็เริ่มที่ 100 USD ครับ"]
         },
         correctIdx: 2
@@ -362,7 +362,7 @@ const PROCESS_MASTERY_DATA = [
     {
         en: "What is the critical function of the 'Done' button on the confirmation screen?",
         vi: "Chức năng quan trọng của nút 'Done' trên màn hình xác nhận là gì?",
-        th: "ฟังก์ชันสำคัญ của nút 'Done' trên màn hình xác nhận là gì?",
+        th: "ฟังก์ชันสำคัญของปุ่ม 'Done' บนหน้าจอยืนยันคืออะไร?",
         type: 'mcq',
         options: {
             en: ["To initiate a refund", "To revert to package selection", "To advance to the trade account setup phase", "To download the transaction receipt"],
@@ -479,7 +479,7 @@ const QUIZZES = [
         title: {
             en: "Sales Logic & Strategy",
             vi: "Tư duy & Chiến lược bán hàng",
-            th: "ตรรกะ và Chiến lược bán hàng"
+            th: "ตรรกะและกลยุทธ์การขาย"
         },
         description: {
             en: "Advanced scenario-based evaluation focusing on strategic objection handling.",
