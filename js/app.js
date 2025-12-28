@@ -362,7 +362,7 @@ const PROCESS_MASTERY_DATA = [
     {
         en: "What is the critical function of the 'Done' button on the confirmation screen?",
         vi: "Chức năng quan trọng của nút 'Done' trên màn hình xác nhận là gì?",
-        th: "ฟังก์ชันสำคัญของปุ่ม 'Done' บนหน้าจอยืนยันคืออะไร?",
+        th: "ฟังก์ชันสำคัญ của nút 'Done' trên màn hình xác nhận là gì?",
         type: 'mcq',
         options: {
             en: ["To initiate a refund", "To revert to package selection", "To advance to the trade account setup phase", "To download the transaction receipt"],
@@ -479,7 +479,7 @@ const QUIZZES = [
         title: {
             en: "Sales Logic & Strategy",
             vi: "Tư duy & Chiến lược bán hàng",
-            th: "ตรรกะและกลยุทธ์การขาย"
+            th: "ตรรกะ và Chiến lược bán hàng"
         },
         description: {
             en: "Advanced scenario-based evaluation focusing on strategic objection handling.",
@@ -570,9 +570,7 @@ const QUIZZES = [
 const StartScreen = ({ onSelectLanguage }) => {
     return (
         <div className="text-center py-6 animate-in fade-in zoom-in duration-300">
-            <div className="flex justify-center mb-6">
-                <img src="images/logo.png" alt="The Brain Trade" className="w-24 h-24 object-contain" />
-            </div>
+            {/* Logo removed as per request */}
             <h1 className="text-3xl font-bold text-gray-800 mb-2">The Brain Trade</h1>
             <p className="text-gray-500 mb-8 text-lg">Please select your language to start the quiz.</p>
             
